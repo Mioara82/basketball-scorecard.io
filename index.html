@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basketball scorecard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<main id="main-section">
+		<div id="score-board">
+			<div id="home">
+				<h1 class="team">HOME</h1>
+				<p id="home-score" class="score">0</p>
+				<div class="buttons">
+					<button id="home-btn-1-el" class="btn1"> + 1</button>
+					<button id="home-btn-2-el" class="btn2"> + 2</button>
+					<button id="home-btn-3-el" class="btn3"> + 3</button>
+				</div>
+			</div>
+			<div id="guest">
+				<h1 class="team">GUEST</h1>
+				<p id="guest-score" class="score">0</p>
+				<div class="buttons">
+					<button id="guest-btn-1-el" class="btn1"> + 1</button>
+					<button id="guest-btn-2-el" class="btn2"> + 2</button>
+					<button id="guest-btn-3-el" class="btn3"> + 3</button>
+				</div>
+			</div>
+		</div>
+		<footer class="reset">
+			<h1 id="pop-up-el" class="hidden"> GAME OVER!</h1>
+			<button id="reset-btn">Reset Score</button>
+		</footer>
+	</main>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
