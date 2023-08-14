@@ -42,7 +42,6 @@ guestBtnThreeEl.addEventListener("click", function(){
 	guestScoreEl.textContent = Number(guestScoreEl.textContent) + 3;
 })
 
-
 resetBtn.addEventListener("click", function(){
 	homeScoreEl.textContent = 0;
 	guestScoreEl.textContent = 0;
@@ -88,6 +87,7 @@ guestBtnThreeEl.addEventListener("click", function(){
 	updateHighestScore("guest", Number(guestScoreEl.textContent));
 });
 
+// Similar changes for guestBtnTwoEl and guestBtnThreeEl
 
 function updateHighestScore(team, score) {
 	if (score > highestScore) {
@@ -98,9 +98,11 @@ function updateHighestScore(team, score) {
 }
 
 function highlightHighestScore() {
+	// Remove highlight from both teams
 	homeScoreEl.classList.remove("highlight");
 	guestScoreEl.classList.remove("highlight");
 	
+	// Apply highlight to the team with the highest score
 	if (highestScoringTeam === "home") {
 		homeScoreEl.classList.add("highlight");
 	} else if (highestScoringTeam === "guest") {

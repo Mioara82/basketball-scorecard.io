@@ -2,7 +2,8 @@
 
 @font-face{
 	font-family: "CursedTimer";
-	src: url("/fonts/CursedTimerUliL.ttf") format("truetype");
+	src: url("/Users/mioaracenusa/Desktop/fonts/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf") format("truetype");
+	/*src: url("CursedTimerULiL.eot");
 	src: url("CursedTimerULiL.woff") format("woff");
 	src: url("CursedTimerULiL.svg")format("svg");*/
 }
